@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { Circle, Triangle, Square} = require("./lib/shapes")
 
 const renderLogo = ({ text, textColor, shape, shapeColor }) => {
     return `
@@ -23,7 +24,7 @@ const main = async() => {
           type: "checkbox",
           name: "shape",
           message: "What shape would you like to use in your logo? Please select ONE from the list.",
-          choices: ["circle", "triangle", "square"]
+          choices: ["Circle", "Triangle", "Square"]
         },
         {
           type: "input",
