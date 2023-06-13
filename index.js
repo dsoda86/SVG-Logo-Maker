@@ -116,7 +116,7 @@ async function createLogo(response) {
     const svg = await setShape(response);
     fs.writeFile(fileName, svg, (err) => {
       if (err) throw err;
-      console.log('Generated logo.svg');
+      console.log("Successfully generated logo.svg!");
     });
   } catch (err) {
     console.log(err);
